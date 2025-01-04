@@ -18,7 +18,7 @@ const path = require('path')
 
 const { token, guildId, password, webhookURL } = JSON.parse(fs.readFileSync("config.json"));
 
-process.title = `rush wishes you a good flight!`;
+process.title = `ravi wishes you a good flight!`;
 
 let vanity;
 
@@ -387,4 +387,4 @@ tlsSocket.on("secureConnect", () => {
   setInterval(() => tlsSocket.write(["GET / HTTP/1.2", "Host: discord.com", "", ""].join("\r\n")), 400);
 
 });
-console.log("SNIPER AKTIF / @apifucker");
+console.log("SNIPER AKTIF / @fx_.  / ravi");
