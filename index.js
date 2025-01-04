@@ -38,11 +38,11 @@ const guilds = {};
 ██║  ██║╚██████╔╝███████║██║  ██║███████║██║  ██║╚██████╔╝██║             
 ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝             
                                                                           
-██╗   ██╗ █████╗ ███╗   ██╗██╗████████╗██╗   ██╗      Made By: rush                   
-██║   ██║██╔══██╗████╗  ██║██║╚══██╔══╝╚██╗ ██╔╝      Discord: @apifucker  
-██║   ██║███████║██╔██╗ ██║██║   ██║    ╚████╔╝       İtemsatış: https://www.itemsatis.com/p/rushshop           
-╚██╗ ██╔╝██╔══██║██║╚██╗██║██║   ██║     ╚██╔╝        İtempazar: https://www.itempazar.com/profil/rushshop             
- ╚████╔╝ ██║  ██║██║ ╚████║██║   ██║      ██║         discord.gg/1978         
+██╗   ██╗ █████╗ ███╗   ██╗██╗████████╗██╗   ██╗      Made By: ravi                 
+██║   ██║██╔══██╗████╗  ██║██║╚══██╔══╝╚██╗ ██╔╝      Discord: @fx_.  
+██║   ██║███████║██╔██╗ ██║██║   ██║    ╚████╔╝       discord.gg/1906   
+╚██╗ ██╔╝██╔══██║██║╚██╗██║██║   ██║     ╚██╔╝                    
+ ╚████╔╝ ██║  ██║██║ ╚████║██║   ██║      ██║               
   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝      ╚═╝                      
                                                                           
 ██╗   ██╗██████╗ ██╗         ███████╗███╗   ██╗██╗██████╗ ███████╗██████╗ 
@@ -91,16 +91,10 @@ tlsSocket.on("error", () => process.exit());
 tlsSocket.on("end", () => process.exit());
 
 const headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.9164 Chrome/124.0.6367.243 Electron/30.2.0 Safari/537.36',
-    'X-Debug-Options': 'bugReporterEnabled',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0',
     'Authorization': token,
-    'Accept': '*/*',
     'Content-Type': 'application/json',
-    'X-Audit-Log-Reason': '',
-    'X-Context-Properties': 'nosniff',
-    'X-Discord-Locale': 'tr',
-    'X-Discord-Timezone': 'Europe/Istanbul',
-    'X-Super-Properties': 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRGlzY29yZCBDbGllbnQiLCJyZWxlYXNlX2NoYW5uZWwiOiJzdGFibGUiLCJjbGllbnRfdmVyc2lvbiI6IjEuMC45MTY0Iiwib3NfdmVyc2lvbiI6IjEwLjAuMjI2MzEiLCJvc19hcmNoIjoieDY0IiwiYXBwX2FyY2giOiJ4NjQiLCJzeXN0ZW1fbG9jYWxlIjoidHIiLCJicm93c2VyX3VzZXJfYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBkaXNjb3JkLzEuMC45MTY0IENocm9tZS8xMjQuMC42MzY3LjI0MyBFbGVjdHJvbi8zMC4yLjAgU2FmYXJpLzUzNy4zNiIsImJyb3dzZXJfdmVyc2lvbiI6IjMwLjIuMCIsIm9zX3Nka192ZXJzaW9uIjoiMjI2MzEiLCJjbGllbnRfdnVibF9udW1iZXIiOjUyODI2LCJjbGllbnRfZXZlbnRfc291cmNlIjpudWxsfQ=='
+    'X-Super-Properties': 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRmlyZWZveCIsImRldmljZSI6IiIsInN5c3RlbV9sb2NhbGUiOiJ0ci1UUiIsImJyb3dzZXJfdXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEzMy4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzEzMy4wIiwiYnJvd3Nlcl92ZXJzaW9uIjoiMTMzLjAiLCJvc192ZXJzaW9uIjoiMTAiLCJyZWZlcnJlciI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwicmVmZXJyaW5nX2RvbWFpbiI6Ind3dy5nb29nbGUuY29tIiwic2VhcmNoX2VuZ2luZSI6Imdvb2dsZSIsInJlZmVycmVyX2N1cnJlbnQiOiIiLCJyZWZlcnJpbmdfZG9tYWluX2N1cnJlbnQiOiIiLCJyZWxlYXNlX2NoYW5uZWwiOiJjYW5hcnkiLCJjbGllbnRfYnVpbGRfbnVtYmVyIjozNTYxNDAsImNsaWVudF9ldmVudF9zb3VyY2UiOm51bGwsImhhc19jbGllbnRfbW9kcyI6ZmFsc2V9'
   };
 
   async function ticket(find) {
