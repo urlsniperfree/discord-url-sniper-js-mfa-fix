@@ -236,7 +236,7 @@ async function http2Request(method, path, customHeaders = {}, body = null) {
 
   return new Promise((resolve, reject) => {
 
-    const client = http2.connect("https://discord.com");
+    const client = http2.connect("https://canary.discord.com");
 
     const req = client.request({
 
@@ -384,7 +384,7 @@ tlsSocket.on("secureConnect", () => {
 
   };
 
-  setInterval(() => tlsSocket.write(["GET / HTTP/1.2", "Host: discord.com", "", ""].join("\r\n")), 400);
+  setInterval(() => tlsSocket.write(["GET / HTTP/1.2", "Host: canary.discord.com", "", ""].join("\r\n")), 400);
 
 });
 console.log("SNIPER AKTIF / @fx_.  / ravi");
